@@ -269,12 +269,12 @@ form{margin:0; padding:0;}
     
 }
 .service_vertical_box p{
-    min-height: 55px;
-    
+    height: 55px;
+    overflow:hidden;
 }
 .readmore {
       margin-top: 5px;
-    
+    overflow:hidden;
 }
 .readmore a{
     
