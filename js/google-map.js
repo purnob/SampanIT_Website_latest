@@ -1,0 +1,3 @@
+<script type="text/javascript"> 
+function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(23.772932395045107,90.4046608259033),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(23.772932395045107, 90.4046608259033)});infowindow = new google.maps.InfoWindow({content:"<b>Sampan IT Limited</b><br/>168 Shanti Niketon<br/> Dhaka" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+</script>

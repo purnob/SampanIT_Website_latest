@@ -1,0 +1,388 @@
+.wb-header {
+
+    width: 100%;
+    background: #34425C;
+    border-bottom: 1px solid #000000;
+}
+
+.wb-wrap {
+    position: relative;
+    height: 83px;
+    margin: 0 auto;
+    width: 96%;
+}
+
+.wb-header .logo {
+     float: left;
+     height: 83px;
+}
+
+.wb-header .logo:hover {
+     opacity: 0.8;
+}
+
+.wb-header .buy-now {
+    color: #FFFFFF;
+    font: 400 13px/32px "Open Sans",sans-serif;
+    text-decoration: none;
+    background: #2ba572;
+    margin-top: 26px;
+    padding: 0 17px;
+    margin-left: 20px;
+}
+
+.wb-header .buy-now:hover {
+     opacity: 0.9;
+}
+
+.wb-nav {
+     float: right;
+     font: 400 16px 'Open Sans',sans-serif;
+     position: relative;
+     z-index: 999;
+}
+
+.wb-nav > a {
+     display: none;
+}
+
+.wb-nav li {
+     position: relative;
+     white-space: nowrap;
+}
+
+.wb-nav li a {
+     color: #7A85A2;
+     display: block;
+     position: relative;
+     text-decoration: none;
+}
+
+.wb-nav > ul > li {
+     float: left;
+     height: 100%;
+}
+
+.wb-nav > ul > li > a {
+     font: 400 12px/84px "Open Sans",sans-serif;
+     height: 100%;
+     padding: 0 18px;
+}
+
+.wb-nav > ul > li > a:hover {
+     color: #FFFFFF;
+}
+
+.wb-nav > ul > li > a.active {
+     color: #fff;
+     background: #2B3444;
+}
+
+.wb-nav li ul {
+     background-color: #FFFFFF;
+     border-top: 2px solid #4D4D4D;
+     display: none;
+     min-width: 100px;
+     opacity: 0;
+     position: absolute;
+     top: 100%;
+     transition: opacity 0.35s ease 0s;
+}
+
+.wb-nav li:hover ul {
+     display: block;
+     opacity: 1;
+}
+
+.wb-nav li ul a {
+     font: 400 13px/34px "Open Sans",sans-serif;
+     padding: 0 15px;
+}
+
+.wb-nav li ul li a:hover {
+     color: #4D4D4D;
+}
+
+.wb-nav li ul li a.active {
+     color: #4D4D4D;
+}
+
+.wb-nav a.last {
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 799px) {
+    .wb-nav { position: relative; margin: 16px 2px 0 0; }
+    .wb-nav > a { position: relative; text-align: left; text-indent: -9999px; height: 52px; width: 50px; background: rgb(39, 51, 70); }
+    .wb-nav > a:before, .wb-nav > a:after { position: absolute; top: 25%; left: 25%; right: 25%; content: ""; border: 2px solid #FFFFFF; }
+    .wb-nav > a:after { top: 47%; box-shadow: 0px 10px 0px 0px #fff; }
+    .wb-nav > a { display: block; }
+    .wb-nav > ul { display: none; position: absolute; right: 0; background: rgb(39, 51, 70); min-width: 250px; }
+    .wb-nav.active > ul { display: block; }
+    .wb-nav > ul > li { width: 100%; }
+    .wb-nav > ul > li > a { padding: 0 15px; text-align: left; font: 400 13px/32px "Open Sans",sans-serif; background: transparent !important; }
+    .wb-nav li ul { position: static; border-top: medium none; background: none repeat scroll 0 0 #EFEFEF; }
+
+    .wb-nav > ul > li > a.active { opacity: 0.6;color:#fff;}
+
+    .wb-nav > ul > li > a:hover { opacity: 0.6;color:#fff;}
+
+    .wb-nav:hover ul {
+        display: block;
+    }
+}
+
+
+.wb-title {
+    width: 100%;
+    background: none repeat scroll 0 0 #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+.wb-title h1 {
+     color: #575757;
+     font: normal 22px "Open Sans",sans-serif;
+     margin: 0;
+     padding: 22px 0 0 0;
+}
+
+.wb-center {
+     margin: 0 auto;
+     max-width: 1000px;
+     width: 96%;
+}
+
+.wb-footer {
+     color: #FFFFFF;
+     font: 400 12px "Open Sans",sans-serif;
+     margin: auto;
+     width: 96%;
+}
+
+.wb-footer .buy-now {
+     color: #2B9A6F;
+     font: 400 12px "Open Sans",sans-serif;
+     text-decoration: none;
+}
+
+.wb-footer .buy-now:hover {
+     opacity: 0.8;
+}
+
+.wb-footer div {
+    border-top: 1px solid #ddd;
+    padding: 12px 0 20px 0;
+    color: #787878;
+
+}
+
+/*  --------------------------------------------
+    helpMode override default stylesheet
+    -------------------------------------------- */
+.hm-wrap, .hm-container {
+    height: 13px;
+    width: 12px;
+}
+
+.hm-wrap {
+    margin-left: 6px;
+}
+
+.hm-container {
+    background: url("../img/info.png") no-repeat scroll center bottom transparent;
+    position: absolute;
+}
+
+.hm-panel {
+    background-color: #515151;
+    border-radius: 3px 3px 3px 3px;
+    margin: 12px;
+    opacity: 0;
+    padding: 13px;
+    position: absolute;
+    transition: opacity 0.35s ease 0s;
+}
+
+.hm-header {
+    color: #FFFFFF;
+    font: 12px/18px sans-serif;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.hm-body {
+    color: #FFFFFF;
+    font: 11px/14px sans-serif;
+    width: 200px;
+}
+
+.hm-moveLeft {
+    margin-left: -18px;
+}
+
+/* END - helpMode override default stylesheet */
+
+.demo-juicy-projects .wb-center,
+.demo-juicy-projects .wb-wrap,
+.demo-juicy-projects .wb-footer  {
+    max-width: 1170px;
+}
+
+.demo-lightbox-gallery .wb-center,
+.demo-lightbox-gallery .wb-wrap,
+.demo-lightbox-gallery .wb-footer  {
+    max-width: 980px;
+}
+
+.demo-meet-the-team .wb-center,
+.demo-meet-the-team .wb-wrap,
+.demo-meet-the-team .wb-footer  {
+    max-width: 980px;
+}
+
+.demo-full-screen .wb-center,
+.demo-full-screen .wb-wrap,
+.demo-full-screen .wb-footer  {
+    max-width: 1170px;
+}
+
+.demo-masonry .wb-center,
+.demo-masonry .wb-wrap,
+.demo-masonry .wb-footer  {
+    max-width: 1170px;
+}
+
+.demo-blog-posts .wb-center,
+.demo-blog-posts .wb-wrap,
+.demo-blog-posts .wb-footer  {
+    max-width: 980px;
+}
+
+.wb-features {
+    background-color: #f9f9f9;
+    padding: 25px 0;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+.wb-features-ul {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.wb-features-li {
+    width: 28%;
+    float: left;
+    margin-right: 8%;
+}
+
+.wb-features-p {
+    font: 12px Open Sans, sans-serif;
+}
+
+.wb-features-h2 {
+    font: bold 23px/36px Open Sans, sans-serif;
+    color: #444;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #D6D6D6;
+    margin-top: 20px;
+}
+
+.wb-features-h2 span {
+    border-bottom: 1px solid #9E9A9A;
+    padding-right: 7px;
+    padding-bottom: 2px;
+}
+
+.wb-features-h3 {
+    font: bold 15px Open Sans, sans-serif;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.wb-desc-p {
+    font: 13px Open Sans, sans-serif;
+    color: #3A3838;
+    padding: 14px 0 22px;
+}
+
+i {
+    font-style: italic;
+}
+
+.wb-nextDemo,
+.wb-prevDemo {
+    float: right;
+    padding: 4px 8px;
+    color: #464646;
+    text-decoration: none;
+    font: 11px Open Sans, sans-serif;
+    margin: -1px 0 0 0;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-top: 0;
+}
+
+.wb-prevDemo {
+    margin: -1px 0 0 6px;
+}
+
+.wb-nextDemo:hover,
+.wb-prevDemo:hover {
+    opacity: 0.85;
+}
+
+.wb-foter-wrapper {
+    background: #f9f9f9;
+}
+
+
+.intro-wrap {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.intro-overlay {
+    z-index: 99999;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.intro-message {
+    position: fixed;
+    background: #E4E4E4;
+    z-index: 99999;
+    color: #525151;
+    border-radius: 5px;
+    padding: 12px 15px;
+}
+
+.intro-message-rc:before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    left: -5px;
+    margin-top: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #E4E4E4;
+}
+
+.intro-message-tc:before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #E4E4E4;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}

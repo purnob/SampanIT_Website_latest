@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Sampan IT Limited" name="description">
+        <meta content="Software firm" name="keywords">
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <title>SampanIT</title>
+
+        <link type="text/css" rel="stylesheet" href="css/custom_style.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/menu_style.css">
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+        <link type="text/css" rel="stylesheet" href="css/vector-icons.css">
+        <link type="text/css" rel="stylesheet" href="css/image_animation.css">
+        <link rel="stylesheet" href="css/animate.css">
+         <link rel="stylesheet" href="css/animation.css">
+
+        <script src="jquery/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="jquery/menu_jquery.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="jquery/jquery.scrollUp.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+        <style type="text/css">
+
+            @media only screen and (max-width: 1200px) { 
+
+                .padding_top { padding-top: 15px !important; }
+                .location { width: 100% !important; }
+                .contact_info { width: 950px !important; }
+                #gmap_canvas {
+                    width: 950px !important;
+                    height: 300px !important;
+                    overflow: hidden !important;
+                    padding-top: 15px !important;
+                }
+
+                #gmap_canvas1{
+                    width: 950px !important;
+                    height: 300px !important;
+                    overflow: hidden !important;
+                    padding-top: 15px !important;
+                } 
+                @media only screen and (max-width: 992px) { 
+
+                    .padding_top { padding-top: 15px !important; }
+                    .location { width: 100% !important!important; }
+                    .contact_info { width: 700px !important; }
+                    #gmap_canvas {
+                        width: 700px !important;
+                        height: 350px !important;
+                        overflow: hidden !important;
+
+                    }
+
+                    #gmap_canvas1{
+                        width: 700px !important;
+                        height: 350px !important;
+                        overflow: hidden !important;
+                    } 
+
+                    @media only screen and (max-width: 768px) { 
+
+                        .padding_top { padding-top: 15px !important;}
+                        .location { width: 100% !important; }
+                        .contact_info { width: 580px !important; }
+                        #gmap_canvas {
+                            width: 580px !important;
+                            height: 250px !important;
+                            overflow: hidden !important;
+                        }
+
+                        #gmap_canvas1{
+                            width: 580px !important;
+                            height: 250px !important;
+                            overflow: hidden !important;
+
+                        } 
+                        @media only screen 
+                        and (min-device-width : 480px) 
+                        and (max-device-width : 768px) {
+                            .padding_top { padding-top: 15px !important; }
+                            .contact_info { width: 450px !important; }
+
+                            #gmap_canvas {
+                                width: 450px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            }
+
+                            #gmap_canvas1{
+                                width: 450px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            } 
+                        }
+                        @media only screen 
+                        and (min-device-width : 620px) 
+                        and (max-device-width : 768px) {
+                            .padding_top { padding-top: 15px !important; }
+                            .contact_info { width: 550px !important; }
+
+                            #gmap_canvas {
+                                width: 550px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            }
+
+                            #gmap_canvas1{
+                                width: 550px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            } 
+                        }
+                        /* Smartphones (portrait and landscape) ----------- */
+
+                        @media only screen 
+                        and (min-device-width : 480px) 
+                            and (max-device-width : 620px) {
+                            .padding_top { padding-top: 15px !important; }
+                            .contact_info { width: 450px !important; }
+                           
+                            #gmap_canvas {
+                                width: 450px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            }
+
+                            #gmap_canvas1{
+                                width: 450px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            } 
+                        }
+                        
+                        @media only screen 
+                        and (min-device-width : 320px) 
+                            and (max-device-width : 480px) {
+                            .padding_top { padding-top: 15px !important; }
+                            .contact_info { width: 300px !important; }
+                           
+                            #gmap_canvas {
+                                width: 300px !important;
+                                height: 200px !important;
+                                overflow: hidden !important;
+
+                            }
+
+                            #gmap_canvas1{
+                                width: 300px !important;
+                                height: 200px !important;
+                                overflow: hidden !important;
+
+                            } 
+                        }
+
+                        /* Smartphones (portrait) ----------- */
+                        
+                        @media only screen 
+                        and (max-width : 320px) {
+                            .padding_top { padding-top: 15px !important; }
+                            .contact_info { width: 250px !important; }
+                            #gmap_canvas {
+                                width: 250px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            }
+
+                            #gmap_canvas1{
+                                width: 250px !important;
+                                height: 250px !important;
+                                overflow: hidden !important;
+
+                            } 
+                        }
+
+                    </style>
+
+                    <script>
+
+                        /* scrollUp Minimum setup */
+                        // $(function () {
+                        // 	$.scrollUp();
+                        // });
+
+                        // scrollUp full options
+                        $(function() {
+                            $.scrollUp({
+                                scrollName: 'scrollUp', // Element ID
+                                scrollDistance: 300, // Distance from top/bottom before showing element (px)
+                                scrollFrom: 'top', // 'top' or 'bottom'
+                                scrollSpeed: 300, // Speed back to top (ms)
+                                easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+                                animation: 'fade', // Fade, slide, none
+                                animationSpeed: 100, // Animation in speed (ms)
+                                scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
+                                //scrollTarget: false, // Set a custom target element for scrolling to the top
+                                scrollText: 'Scroll to top', // Text for element, can contain HTML
+                                scrollTitle: false, // Set a custom <a> title if required.
+                                scrollImg: false, // Set true to use image
+                                activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                                zIndex: 2147483647 // Z-Index for the overlay
+                            });
+                        });
+                    </script>
+
+                    <script type="text/javascript">
+                        function init_map() {
+                            var myOptions = {zoom: 17, center: new google.maps.LatLng(23.772932395045107, 90.4046608259033), mapTypeId: google.maps.MapTypeId.ROADMAP};
+                            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                            marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(23.772932395045107, 90.4046608259033)});
+                            infowindow = new google.maps.InfoWindow({content: "<b>Sampan IT Limited</b><br/>168 Shanti Niketon<br/> Dhaka"});
+                            google.maps.event.addListener(marker, "click", function() {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+
+                    <script type="text/javascript"> function init_map() {
+                            var myOptions = {zoom: 15, center: new google.maps.LatLng(23.74894993000876, 90.41299016878656), mapTypeId: google.maps.MapTypeId.ROADMAP};
+                            map = new google.maps.Map(document.getElementById("gmap_canvas1"), myOptions);
+                            marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(23.74894993000876, 90.41299016878656)});
+                            infowindow = new google.maps.InfoWindow({content: "<b>Sampan</b><br/>98 DIT Road, Malibag Rail Gate<br/> Dhaka"});
+                            google.maps.event.addListener(marker, "click", function() {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+                </head>
+
+                <body>
+                    <div class="main_wrapper ">
+                        <!------------------------Header Starts------------------------------------------>
+                        <div class="header_wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="logo col-md-3">
+                                        <a href="#"><img src="images/logo.jpg" height="41" width="159"></a>
+                                    </div>
+                                    <div id="cssmenu" class="col-md-offset-1 col-md-8">
+                                        <ul>
+                                            <li class="active">
+                                                <a href="index.html"><i class="icon-home-5"></i><span>Home</span></a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="services.html"><i class="icon-briefcase"></i><span>Services</span></a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="Portfolio.html"><i class="icon-trophy"></i><span>Portfolio</span></a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="About Us.html"><i class="icon-user-2"></i><span>About Us</span></a>
+                                            </li>
+                                            <li class="last">
+                                                <a href="Contact.html"><i class="icon-envelope"></i><span>Contact</span></a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div> 
+                        </div>
+
+                        <!------------------------Contact Details------------------------> 
+                        <div class="contact_header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 triggerAnimation animated rotateInDownLeft">
+                                        Contact Informations
+                                    </div>
+                                </div>
+                            </div>         
+                        </div>
+                        <!------------------------Head Office--------------------------->    
+                        <div class="contact_details">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="150">
+                                        <div class="contact_info col-md-12">
+                                            <h3>Head Office</h3>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="fa fa-map-marker"></i>98 DIT Road , Malibag Rail Gate</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa fa-phone"></i> 9349771-2,8332999</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa fa-envelope"></i>sampanit.ltd@gmail.com</span>
+                                                </li>
+                                                <li class="time">
+                                                    <span><i class="fa fa-clock-o"></i>saturday - wednesday: 9:00 am - 10:00 pm</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="location col-md-8 padding_top">
+                                        <div id="gmap_canvas1">
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>      
+                        </div>
+
+                        <!------------------------Operational Office---------------------------> 
+                        <div class="contact_details">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 wow bounceInLeft" data-wow-duration="2.5s" data-wow-offset="150">
+                                        <div class="contact_info col-md-12">
+                                            <h3>Operational Office</h3>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="fa fa-map-marker"></i>168 Shanti Niketon</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa fa-phone"></i> 01673910504</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa fa-envelope"></i>sampanit.ltd@gmail.com</span>
+                                                </li>
+                                                <li class="time">
+                                                    <span><i class="fa fa-clock-o"></i>Saturday - Wednesday: 9 am - 10 pm</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="location col-md-8 padding_top">
+                                        <div id="gmap_canvas">
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>     
+                        </div>
+
+                        <!-------------------------message------------------------------>    
+                        <div class="message">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="signup col-md-5 triggerAnimation animated fadeInLeft" data-animate="fadeInUpBig" >
+                                        <div class="col-md-12">
+                                            <span>If you have any inquiries or need any services from us,please feel free to contact us or leave us a message. We will reply within 24 
+                                            hours. </span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="col-md-12">
+                                                <h2 class="home-title">Signup our Newsletter</h2>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p>Signup our newsletter to get notify about latest updates !</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input id="signup" class="form-control" type="email" placeholder="Enter email">
+                                            </div>
+                                            <div class="col-md-12 signup_button wow bounceInDown" data-wow-duration="2.0s" data-wow-offset="120">
+                                                <button class="btn btn-default" type="submit">Signup Today</button>
+                                            </div>
+                                        </div>
+
+                                    </div>    
+                                    <div class="form col-md-7">
+                                        <form role="form" class="col-md-offset-1 col-md-10 col-xs-12 col-sm-12">
+                                            <h2>Leave a Message</h2>
+                                            <hr class="colorgraph">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                                    <div class="form-group form_style">
+                                                        <input type="text" tabindex="1" placeholder="First Name" class="form-control input-lg" id="name" name="name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form_style">
+                                                <input type="text" tabindex="3" placeholder="Email Address" class="form-control input-lg" id="email" name="email_address">
+                                            </div>
+                                            <div class="form-group form_style">
+                                                <input type="email" tabindex="4" placeholder="Phone Number" class="form-control input-lg" id="phone" name="phone">
+                                            </div>
+                                            <div class="form_style feedback">
+                                                <textarea rows="3" tabindex="5" placeholder="Message..." class="form-control" name="message"></textarea>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6 col-md-6 wow bounceInDown" data-wow-duration="2.0s" data-wow-offset="120"><input type="submit" tabindex="7" class="btn btn-primary btn-block btn-lg" value="Send"></div>
+                                                <div class="col-xs-6 col-md-6 wow bounceInDown" data-wow-duration="2.0s" data-wow-offset="120"><input type="reset" class="btn btn-success btn-block btn-lg" value="Reset"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>     
+
+                        <!------------------------Footer Starts------------------------------------------>   
+
+                        <div class="footer_wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="copyright col-md-12 ">
+                                        Copyright &copy; <a href="#">Sampan IT Limited</a> . All 
+                                        Rights Reserved.
+                                    </div>   
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                    <a id="scrollUp" href="#"></a>
+
+                    <script src="jquery/ui.totop.js"></script>
+                    
+                    
+                </body>
+            </html>

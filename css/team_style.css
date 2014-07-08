@@ -1,0 +1,452 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:        Showcase
+Version:        1.0
+Primary use:    http://www.themeapt.com/templates/showcase/
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+1. Body
+    2. Header / #header
+        2.1. Navigation / .navbar-wrapper
+        2.2. Social Navigation
+
+    3. Content 
+        3.1. Slider / .slider 
+        3.2. Main Content/#
+
+    4. Footer / #footer
+        4.1. Footer Widget
+        4.2. Copyright
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background: #ffffff 
+Content:    #858585
+Header h1:  #191919 
+Header h2:  #858585
+Footer:     #030303
+
+a (standard):   #ffffff 
+a (visited):    #1abc9c 
+a (active):     #1abc9c
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy:          Open Sans, sans-serif;
+Headers:            31px Dosis;
+Input, textarea:    Open Sans,sans-serif;
+-------------------------------------------------------------------*/
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+body {
+	line-height: 1; }
+ol, ul {
+	list-style: none; }
+blockquote, q {
+	quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+
+body {
+	margin:0 auto;
+	padding:0;
+	line-height:22px;
+}
+
+.clear{
+	clear: both; 
+}
+
+/*** END OF GLOBAL  ***/
+
+
+/*============================================ DEFAULT ELEMENT STYLES  =================================================*/
+
+/* links */
+a, a:visited {text-decoration:none;}
+a:hover{text-decoration:none;}
+a img{border:none}
+
+img{
+	max-width: 100%; 
+}
+
+/* lists, blockquotes and paragraphs */
+ul {
+	list-style: none;
+	display: inline-block;
+}
+ol {
+	list-style: decimal;	
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+
+/*** END OF DEFAULT ELEMENT STYLES ***/
+
+
+/*============================================ Custom STYLES  =================================================*/
+
+/*****************
+////////////////////
+//	Common CSS   //
+//////////////////
+******************/
+
+/**********COLOR CSS*************/
+
+/*Background*/
+.parallax-1 {
+    background: url(images/parallax-image/00_01.png) 100% 0 repeat fixed;
+    padding: 180px 0;
+    color: #ffffff; 
+}
+
+.client_bg{
+    background: url(images/parallax-image/00_02.png) 100% 0 repeat fixed;
+    padding: 80px 0 55px;
+}
+
+.testimonial_bg{
+    background: url(images/parallax-image/00_03.png) repeat fixed 100% 0 / 100% auto rgba(0, 0, 0, 0);    
+    padding: 100px 0;
+}
+
+.get_social_bg{
+    background: #f4f8f9; 
+    padding: 50px 0px; 
+}
+
+.footer_bg{
+    background: #202020; 
+}
+
+.theme_bg{
+    background: #1ABC9C; 
+}
+
+.darker_colors_bg{
+    background: #01455e; 
+}
+
+
+/*Common Color*/
+
+
+/*Border Color*/
+
+
+/*Font Size*/
+.size12{
+	font-size: 12px;
+}
+.size13{
+	font-size: 13px;
+}
+.size14{
+	font-size: 14px;
+}
+.size15{
+	font-size: 15px;
+}
+.size16{
+	font-size: 16px;
+}
+.size18{
+	font-size: 18px;
+}
+.size20{
+	font-size: 20px;
+}
+.size22{
+	font-size: 22px;
+}
+.size24{
+	font-size: 24px;
+}
+.size28{
+	font-size: 28px;
+}
+.size30{
+	font-size: 30px;
+}
+.size32{
+	font-size: 32px;
+}
+
+.size36{
+	font-size: 36px; 
+}
+
+/*Padding And Margin*/
+
+.first{
+	margin-left: 0px!important; 
+}
+
+.mt{
+	margin-top: 25px; 
+}
+
+.mb{
+	margin-bottom: 25px; 
+}
+
+.content_pt{
+	padding-top: 25px; 
+}
+
+.content_pb{
+	padding-bottom: 25px; 
+}
+
+/*Heading Font familly*/
+
+.blog_style_2_content h1, .skill_set_item p, .main_heading h1{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.blog_style_2_quote h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sortcode_page{
+    font-family: 'Dosis', sans-serif;
+}
+
+/*Heading*/
+.content_heading h1 {
+    color: #191919;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+/*Paragraph*/ 
+
+p{
+    color: #858585;
+    font-size: 15px; 
+}
+
+/*transition*/
+
+.purchase, .service_content h1, .service_icon,  .portfolio-link .view_button,  .team_content, .team_heading,
+.update_icon, .blog_style_2_content h1, .blog_next a span, .sf-menu, .navbar-wrapper .logo a img, .blog_icon, 
+.blog_content h1, #main-menu ul li, .navbar-wrapper, #main-menu ul li a, #main-menu ul li a span,
+a, .blog_style_2_wihtout_image, .logo, .blog_style_2, .contact_submit , .tp-bullets.simplebullets .bullet
+{
+	-moz-transition: all .5s ease-out; -webkit-transition: all .5s ease-out; -o-transition: all .5s ease-out;
+}
+
+/*Button*/
+
+.rd-button {
+    border: 1px solid;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 19px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.rd-button:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.23) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #fff; 
+}
+
+.rd-button.dark-text {
+    color: rgba(59, 59, 59, 0.85);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.rd-button.dark-text.rd-button:hover {
+    color: rgba(59, 59, 59, 0.85)!important;
+}
+
+
+/*****************
+////////////////////
+//	  Main CSS   //
+//////////////////
+******************/
+
+
+
+/*About Us*/
+
+.about_bg {
+    background: url("images/00_08.png") no-repeat scroll right top #FFFFFF;
+}
+
+/*Tabs*/
+.tabs ul li a {
+    color: #b4b4b4; 
+}
+
+.tabs .ui-tabs-active a{
+    color: #191919; 
+}
+
+.tabs ul li {   
+    background: #ffffff;  
+    border-left: 2px solid #b4b4b4;
+    border-radius: 5px 5px 0 0;
+    border-right: 2px solid #b4b4b4 !important;
+    border-top: 2px solid #b4b4b4;
+    margin-right: 7px;
+    position: relative;
+}
+
+.tabs .ui-tabs-active {
+    margin-bottom: -1px;
+    padding-bottom: 2px;
+}
+
+.tab_image{
+    width: 40%; 
+    margin: 0 20px 20px 0; 
+    float: left;
+}
+
+.tab_content{
+    width: 50%; 
+    float: left;
+}
+
+.inner-tab1{
+    margin-top: -5px;  
+}
+
+/*Accordion*/
+.first_accordion{
+
+}
+
+.first_accordion h3{
+    color: #858585; 
+    font-size: 16px; 
+    font-weight: 600; 
+}
+
+.ui-accordion-header-icon {
+    background: url("images/plus.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 30px;
+    margin-left: -3px;
+    margin-right: 10px;
+    margin-top: 7px;
+    width: 30px;
+}
+
+.ui-state-active .ui-icon {
+    background: url("images/minus.png") no-repeat scroll center center #37B36C;
+    border-radius: 50px;
+}
+
+.accordion_content img{
+    padding-bottom: 10px; 
+}
+
+
+/*Team Section*/
+
+.team_bg {
+    background: url("images/team_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding: 50px 0;
+}
+
+.team_content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #f7f7f7; 
+    
+}
+
+.member_designation {
+    margin-right: -2px; 
+    margin-top: -47px;
+    text-align: right;
+}
+
+.team_section{
+    position: relative;
+}
+
+.team_section img{
+    width: 100%; 
+}
+
+.member_designation p {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 11px;
+    line-height: normal;
+}
+
+.team_heading {
+    border-bottom: 2px solid #f7f7f7;
+    padding: 0 0 10px;
+}
+
+.team_content_text {
+    padding: 20px 25px 10px;
+}
+
+.team_heading h1 {
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.team_social_icon {
+    margin-top: -12px;
+}
+
+.team_social_icon ul li {
+    float: left;
+    margin-right: 6px;
+}
+
+.team_social_icon ul li a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #B2B7BA;
+    border-radius: 50% 50% 50% 50%;
+    color: #B2B7BA;
+    font-size: 18px;
+    padding: 7px 8px;
+    text-align: center;
+}
