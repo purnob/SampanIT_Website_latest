@@ -18,6 +18,14 @@
         <link type="text/css" rel="stylesheet" href="css/image_animation.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/animation.css">
+        
+        <style type="text/css">
+        @media only screen and (max-width: 768px) { 
+        .padding_top{ padding-top : 20px !important; }
+       
+
+        }    
+        </style>
 
 
         <script src="jquery/jquery-1.11.1.min.js"></script>
@@ -40,15 +48,16 @@
 
                 $('#accordion').on('shown.bs.collapse', function() {
                     $.each($(this).children('div'), function() {
-                        $(this).children('div .panel-heading').addClass('abc');
+                        $(this).children('div .panel-heading').addClass('accordion_open');
                         if ($(this).children('div').hasClass('in') == true) {
                             //console.log($(this).children('div .panel-heading'));
                             $(this).children('div .panel-heading').addClass('accordion_open');
                             $(this).children('div .panel-heading').removeClass('accordion_closed');
                         }
                         else {
-                            $(this).children('div .panel-heading').removeClass('accordion_open');
                             $(this).children('div .panel-heading').addClass('accordion_closed');
+                            $(this).children('div .panel-heading').removeClass('accordion_open');
+                            
                         }
                     });
                 });
@@ -123,85 +132,91 @@
                 </div> 
             </div>
             <!-----------------------------------About--------------------------------------->       
-            <div class="about_wrapper col-md-12 clr">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 about_header">
-                            About Us
-                        </div>
-                        <div class="col-md-6 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right themeapt_start_animation">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#who" data-toggle="tab">Who</a></li>
-                                <li><a href="#what" data-toggle="tab">What</a></li>
-                                <li><a href="#when" data-toggle="tab">When</a></li>  
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="who">
-                                    Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.
-
-                                </div>
-                                <div class="tab-pane" id="what">
-                                    Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="tab-pane" id="when">
-                                    Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.
-                                </div>
-
+            <div class="about_wrapper">
+                <div class="about_header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 triggerAnimation animated rotateInDownLeft">
+                                About Us
                             </div>
-                        </div>
-                        <div class="col-md-6 themeapt_animated_text themeapt_text themeapt_animate_when_almost_visible right-to-left themeapt_start_animation">
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href=
-                                               "#collapseOne">
-                                                Our Approach 
-                                            </a>
-                                        </h4>
+                        </div>    
+                    </div>         
+                </div>
+                <div class="about_details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 padding_bottom themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right themeapt_start_animation">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#who" data-toggle="tab">Who</a></li>
+                                    <li><a href="#what" data-toggle="tab">What</a></li>
+                                    <li><a href="#when" data-toggle="tab">When</a></li>  
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="who">
+                                        Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.
+
                                     </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                                        </div>
+                                    <div class="tab-pane" id="what">
+                                        Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.
                                     </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href=
-                                               "#collapseTwo">
-                                                Mission
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                                        </div>
+                                    <div class="tab-pane" id="when">
+                                        Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Sed diam nonummy nibh Sed diam. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href=
-                                               "#collapseThree">
-                                                Vision
-                                            </a>
-                                        </h4>
+                            </div>
+                            <div class="col-md-6 col-sm-6 padding_top themeapt_animated_text themeapt_text themeapt_animate_when_almost_visible right-to-left themeapt_start_animation">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href=
+                                                   "#collapseOne">
+                                                    Our Approach 
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href=
+                                                   "#collapseTwo">
+                                                    Mission
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href=
+                                                   "#collapseThree">
+                                                    Vision
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>    
             </div>
 
             <!---------------- Meet the Member--------------->

@@ -103,10 +103,6 @@ form{margin:0; padding:0;}
 }
 /*---------Skill Bars---------*/
 
- p {
- color:#525252;
- font-size:12px;
-}
 .skillbar {
 	position: relative;
 	display: block;
@@ -262,10 +258,10 @@ form{margin:0; padding:0;}
 .service_vertical_box {
     display: block;
     margin-bottom: 30px;
-    overflow: hidden;
+    
 }
 .service_vertical_box h3{
-    min-height: 45px;
+    height: 45px;
     
 }
 .service_vertical_box p{
@@ -274,7 +270,7 @@ form{margin:0; padding:0;}
 }
 .readmore {
       margin-top: 5px;
-    overflow:hidden;
+  
 }
 .readmore a{
     
@@ -416,13 +412,13 @@ form{margin:0; padding:0;}
 .contact_info strong { color:#420035; }
 .contact_header p { margin : 10px 0 0 0; }
 .contact_header {
-	width: 100%;
-	background: -webkit-linear-gradient(left, skyblue , yellowgreen); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(left, skyblue , yellowgreen); /* For Opera 11.1 to 12.0 */
+    width: 100% !important;
+    background: -webkit-linear-gradient(left, skyblue , yellowgreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, skyblue , yellowgreen); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(left, skyblue , yellowgreen); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(left, skyblue , yellowgreen); /* Standard syntax */
-	padding: 30px 0 30px 0; 
-	
+    background: linear-gradient(left, skyblue , yellowgreen); /* Standard syntax */
+    padding: 30px 0 30px 0; 
+
 }
 
 .contact_header div{
@@ -599,7 +595,7 @@ form{margin:0; padding:0;}
 .ch-info-back {
     padding: 15px;
     text-align: center;
-	background-color:#EBF4AA; 
+	background-color:#EFDEFA; 
 }
 .ch-info-front {
     padding-top: 40px;
@@ -610,7 +606,7 @@ form{margin:0; padding:0;}
 .ch-info-front i {color:#4578A2; }
 
 .ch-info-back h3 {
-    color: #656565;
+    color: #0C5713;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 0;
@@ -618,7 +614,8 @@ form{margin:0; padding:0;}
 }
 .ch-info-back p {
 	margin: 15px 0 0 0;
-    color: #656565;
+    color: #101031;
+	font-size: 14px;
 }
 .ch-info-front h3 {
     color: #FFFFFF;
@@ -685,8 +682,21 @@ form{margin:0; padding:0;}
 
 
 
-.about_wrapper{ background-color:#D8EEDE;}
-.about_header { padding: 30px 0 ; font-size:25px; font-weight:bold; }
+.about_wrapper{ background-color:#D8EEDE; width: 100%;}
+.about_header {
+    padding: 30px 0 ; font-size:25px; font-weight:bold; width: 100% !important;
+    background: -webkit-linear-gradient(left, skyblue , yellowgreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, skyblue , yellowgreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, skyblue , yellowgreen); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, skyblue , yellowgreen); /* Standard syntax */
+    padding: 30px 0 30px 0; 
+}
+
+.about_details{
+    width: 100%;
+    padding: 30px 0;
+    
+}
 
 /* about us left*/
 
@@ -695,7 +705,7 @@ form{margin:0; padding:0;}
 
 .accordion_open h4 a{
 
-color:#37B36C;
+    color:#37B36C;
 
 }
 .accordion_open a:before{

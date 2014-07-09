@@ -238,9 +238,17 @@
     display: none;
   }
   #cssmenu ul li a {
-    padding: 12px 20px;
-	color:#E0EFC8;
+      padding: 12px 20px;
+      color:#E0EFC8;
+      margin-left : 0px !important;
+      -webkit-transition: all 0.25s liner 0s;
+      -moz-transition: all 0.25s liner 0s;
+      -ms-transition: all 0.25s liner 0s;
+      -o-transition: all 0.25s liner 0s;
+      transition: all 0.25s liner 0s;
+      text-align:center; 
   }
+  
   #cssmenu > ul > li > a:hover{
 	background: #9AB0D1;
 }
