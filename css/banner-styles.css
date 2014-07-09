@@ -462,7 +462,7 @@ header a {
 .page-title {
   margin: .25em 0;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2em !important;
   text-align:center;
 }
 
@@ -746,7 +746,7 @@ header a {
 }
 .rotate3dY .front {
   background-color: #ddd;
-  color: #455962;
+  color: #55ACEE;
 }
 
 .faces .back {
@@ -855,7 +855,7 @@ input {
     width: 49%
   }
   .page-title{
-    font-size:2.5em;
+    font-size:2em !important;
   }
   .page-content{
     font-size:1em;

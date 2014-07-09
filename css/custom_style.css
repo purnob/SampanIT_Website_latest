@@ -70,23 +70,29 @@ form{margin:0; padding:0;}
 	background-color: #434744;
 	border-top: 3px #2898E9 solid;
 }
-.social {
-	width: 100%;
-	height: 100px;
-	background: #DAEFE7;
+
+.social{
+	padding-top: 30px;
 }
 .social a {
-	display: block;
+	padding-left: 20px;
+	text-decoration: none;
 }
-.social a img:hover {
-	display: block;
-	opacity: 0.4;
-	border: 3px #1108DD solid;
+.social i {
+	font-size: 25px;
+	color: white;
+}
+.social  a:hover {
 	transition: .1s ease-in;
+	color: green;
+	text-decoration: none !important;
 }
-.social a:active {
-	background-color: #BD8384;
+.social  i:hover {
+	transition: .1s ease-in;
+	color: green;
+	
 }
+
 .copyright {
 	font-size: 16px;
 	color: #D9E7E6;
