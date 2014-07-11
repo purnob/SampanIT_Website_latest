@@ -1,0 +1,71 @@
+/*=============Recent Works===========*/
+
+.recent_work_wrapper{width:100% ; background-color: #d9c4ec; padding : 0 0 50px 0;}
+.recent_work_header{ padding : 30px 0; }
+
+
+.recent-work div img {
+  height : 200px;
+  width : 360px;
+ 
+      
+}
+.recent_work div h4 {
+  font-size: 20px;
+  padding: 10px 0;
+
+}
+.recent-work {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 50px;
+}
+
+.recent-work figure {
+    margin-bottom: 20px;
+    position: relative;
+}
+.recent-work figure:hover .overlay {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f8434a;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-align: center;
+}
+.recent-work figure .overlay button {
+    line-height: 100%;
+    color: white;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 60px;
+    height: 100%;
+}
+.recent-work figure .overlay button i {
+    line-height: 100%;
+}
+.recent-work h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.recent-work h4 a {
+    color: #202020;
+}
+.recent-work .category {
+    color: #d4d4d4;
+    text-transform: uppercase;
+}
